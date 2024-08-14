@@ -35,44 +35,26 @@ function crearTarjeta(e) {
             promedioDiario: promedioDiario,
             disponible: promedioDiarioDespuesGastos,
         };
-    
-
-    
-    
-    
+        if(balance < 0){
+        
+            alert(`necesitas conseguir aun $${balance} para pagar las vacaciones que te mandaste`)
+            
+        }else{
+            
+            alert("todavia podes darte un gusto")
+            
+        }
     UI (destiny,budget, balance, promedioDiario, promedioDiarioDespuesGastos)
     continuar = confirm("¿desea crear otro destino?");
     }
 };
 
 function UI (destiny,budget, balance, promedioDiario, promedioDiarioDespuesGastos){
-    let result = document.getElementById("result");
-    let dataPrint = document.createElement("div")
+    let result = alert(`su destino es: ${destiny}\n
+                        su budget es: ${budget}\n
+                        su balance es: ${balance}\n
+                        su promedio de dinero diario es: ${promedioDiario}\n
+                        su dinero diario disponible es: ${promedioDiarioDespuesGastos}\n
+                        `);
     
-    dataPrint.innerHTML = `
-    
-    <div class="container-data">
-        <div class="title-expens">
-            <span>${destiny}</span>
-        </div>
-        <div class="title-expens">
-            <span>${budget}</span>
-        </div>
-        <div class="title-expens balance">
-            <span>${balance}</span>
-        </div>
-    </div>
-    <h1 class="promedio">El dinero diario es: $${promedioDiario}</h1>
-    <h2 class="disponible">El dinero diario disponible despues de gastos es: $${promedioDiarioDespuesGastos}</h2>
-    `
-    if(balance < 0){
-        
-        alert(`necesitas conseguir aun $${balance} para pagar las vacaciones que te mandaste`)
-        
-    }else{
-        
-        alert("todavia podes darte un gusto")
-        
-    }
-    result.appendChild(dataPrint);
 }
