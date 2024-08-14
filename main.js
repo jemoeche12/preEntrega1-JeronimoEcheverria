@@ -44,14 +44,15 @@ function crearTarjeta(e) {
             alert("todavia podes darte un gusto")
             
         }
-    UI (destiny,budget, balance, promedioDiario, promedioDiarioDespuesGastos)
+    UI (destiny,budget,days, balance, promedioDiario, promedioDiarioDespuesGastos,)
     continuar = confirm("¿desea crear otro destino?");
     }
 };
 
-function UI (destiny,budget, balance, promedioDiario, promedioDiarioDespuesGastos){
+function UI (destiny,budget,days, balance, promedioDiario, promedioDiarioDespuesGastos){
     let result = alert(`su destino es: ${destiny}\n
                         su budget es: ${budget}\n
+                        la cantidad de dias de viaje son: ${days}\n
                         su balance es: ${balance}\n
                         su promedio de dinero diario es: ${promedioDiario}\n
                         su dinero diario disponible es: ${promedioDiarioDespuesGastos}\n
