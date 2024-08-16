@@ -50,7 +50,7 @@ function crearTarjeta(e) {
 };
 
 function UI (destiny,budget,days, balance, promedioDiario, promedioDiarioDespuesGastos){
-    let result = alert(`su destino es: ${destiny}\n
+    alert              (`su destino es: ${destiny}\n
                         su budget es: ${budget}\n
                         la cantidad de dias de viaje son: ${days}\n
                         su balance es: ${balance}\n
